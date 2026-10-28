@@ -4,26 +4,26 @@ import android.app.Activity
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName
 import android.content.Intent
-import android.net.Uri
+import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.ArrayAdapter
 import android.widget.Button
-import android.widget.Toast
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.ListView
 import android.widget.TextView
+import android.widget.Toast
 import java.io.File
 import java.net.HttpURLConnection
 import java.net.URL
-import android.graphics.Color
 
 class MainActivity : Activity() {
 
     private var all: List<String> = emptyList()
     private var query = ""
+    private var current = VERBS_FILE          // which list is shown
     private lateinit var adapter: ArrayAdapter<String>
     private lateinit var title: TextView
 
@@ -36,16 +36,25 @@ class MainActivity : Activity() {
             setBackgroundColor(Color.parseColor("#0F172A"))
         }
         title = TextView(this).apply { textSize = 18f; text = "Loading..." }
-        val buttons = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
-        val pickVerbs = Button(this).apply { text = "Verbs file"; isAllCaps = false }
-        val pickWords = Button(this).apply { text = "Words file"; isAllCaps = false }
-        val reset = Button(this).apply { text = "Reset"; isAllCaps = false }
+
         val bw = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
-        buttons.addView(pickVerbs, bw)
-        buttons.addView(pickWords, bw)
-        buttons.addView(reset, bw)
-        pickVerbs.setOnClickListener { pickFile(REQ_VERBS) }
-        pickWords.setOnClickListener { pickFile(REQ_WORDS) }
+
+        // Row 1: choose which list to view
+        val tabs = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
+        val tabVerbs = Button(this).apply { text = "Phrasal verbs"; isAllCaps = false }
+        val tabWords = Button(this).apply { text = "Words"; isAllCaps = false }
+        tabs.addView(tabVerbs, bw)
+        tabs.addView(tabWords, bw)
+        tabVerbs.setOnClickListener { showList(VERBS_FILE) }
+        tabWords.setOnClickListener { showList(WORDS_FILE) }
+
+        // Row 2: load your own file for the list being shown, or go back to online files
+        val actions = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
+        val choose = Button(this).apply { text = "Choose file"; isAllCaps = false }
+        val reset = Button(this).apply { text = "Reset"; isAllCaps = false }
+        actions.addView(choose, bw)
+        actions.addView(reset, bw)
+        choose.setOnClickListener { pickFile() }
         reset.setOnClickListener { resetToOnline() }
 
         val search = EditText(this).apply { hint = "Search"; setSingleLine() }
@@ -55,7 +64,8 @@ class MainActivity : Activity() {
         list.adapter = adapter
 
         root.addView(title)
-        root.addView(buttons)
+        root.addView(tabs)
+        root.addView(actions)
         root.addView(search)
         root.addView(list)
         setContentView(root)
@@ -71,9 +81,19 @@ class MainActivity : Activity() {
 
         all = readLocal()
         applyFilter()
+        refreshOnline()
+    }
 
+    private fun showList(file: String) {
+        current = file
+        all = readLocal()
+        applyFilter()
+    }
+
+    private fun refreshOnline() {
         Thread {
-            try { download() } catch (e: Exception) { }
+            try { download(VERBS_FILE, PhrasalWidget.VERBS_URL) } catch (e: Exception) { }
+            try { download(WORDS_FILE, WordsWidget.WORDS_URL) } catch (e: Exception) { }
             val fresh = readLocal()
             runOnUiThread { all = fresh; applyFilter() }
         }.start()
@@ -83,7 +103,8 @@ class MainActivity : Activity() {
         val shown = all.filter { it.contains(query, ignoreCase = true) }
         adapter.clear()
         adapter.addAll(shown.map { format(it) })
-        title.text = "${shown.size} of ${all.size} phrasal verbs"
+        val label = if (current == VERBS_FILE) "phrasal verbs" else "words"
+        title.text = "${shown.size} of ${all.size} $label"
     }
 
     private fun format(line: String): String {
@@ -95,38 +116,38 @@ class MainActivity : Activity() {
 
     private fun readLocal(): List<String> {
         return try {
-            val cache = File(filesDir, "phrasal_verbs.txt")
+            val cache = File(filesDir, current)
             val text = if (cache.exists()) cache.readText(Charsets.UTF_8)
-            else assets.open("phrasal_verbs.txt").bufferedReader(Charsets.UTF_8).readText()
+            else assets.open(current).bufferedReader(Charsets.UTF_8).readText()
             text.lines().filter { it.isNotBlank() }
         } catch (e: Exception) {
             emptyList()
         }
     }
 
-    private fun pickFile(requestCode: Int) {
+    // Opens the system file picker; the chosen file replaces the list currently shown
+    private fun pickFile() {
         val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
             addCategory(Intent.CATEGORY_OPENABLE)
             type = "*/*"
         }
-        startActivityForResult(intent, requestCode)
+        startActivityForResult(intent, REQ_PICK)
     }
 
     @Deprecated("Deprecated in Java")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        val uri: Uri = data?.data ?: return
-        if (resultCode != RESULT_OK) return
-        val name = if (requestCode == REQ_VERBS) "phrasal_verbs.txt" else "words.txt"
+        if (requestCode != REQ_PICK || resultCode != RESULT_OK) return
+        val uri = data?.data ?: return
         try {
             val text = contentResolver.openInputStream(uri)!!.bufferedReader(Charsets.UTF_8).readText()
             if (text.isBlank()) {
                 Toast.makeText(this, "File is empty", Toast.LENGTH_SHORT).show()
                 return
             }
-            File(filesDir, name).writeText(text, Charsets.UTF_8)
-            PhrasalWidget.setCustom(this, name, true)
-            Toast.makeText(this, "$name loaded", Toast.LENGTH_SHORT).show()
+            File(filesDir, current).writeText(text, Charsets.UTF_8)
+            PhrasalWidget.setCustom(this, current, true)
+            Toast.makeText(this, "$current loaded", Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
             Toast.makeText(this, "Could not read file", Toast.LENGTH_SHORT).show()
             return
@@ -137,18 +158,14 @@ class MainActivity : Activity() {
     }
 
     private fun resetToOnline() {
-        for (name in listOf("phrasal_verbs.txt", "words.txt")) {
+        for (name in listOf(VERBS_FILE, WORDS_FILE)) {
             PhrasalWidget.setCustom(this, name, false)
             File(filesDir, name).delete()
         }
         Toast.makeText(this, "Using online files", Toast.LENGTH_SHORT).show()
         all = readLocal()
         applyFilter()
-        Thread {
-            try { download() } catch (e: Exception) { }
-            val fresh = readLocal()
-            runOnUiThread { all = fresh; applyFilter() }
-        }.start()
+        refreshOnline()
         refreshWidgets()
     }
 
@@ -164,15 +181,15 @@ class MainActivity : Activity() {
         }
     }
 
-    private fun download() {
-        if (PhrasalWidget.isCustom(this, "phrasal_verbs.txt")) return
-        val conn = URL(PhrasalWidget.VERBS_URL).openConnection() as HttpURLConnection
+    private fun download(name: String, url: String) {
+        if (PhrasalWidget.isCustom(this, name)) return
+        val conn = URL(url).openConnection() as HttpURLConnection
         conn.connectTimeout = 5000
         conn.readTimeout = 5000
         try {
             if (conn.responseCode == 200) {
                 val text = conn.inputStream.bufferedReader(Charsets.UTF_8).readText()
-                if (text.isNotBlank()) File(filesDir, "phrasal_verbs.txt").writeText(text, Charsets.UTF_8)
+                if (text.isNotBlank()) File(filesDir, name).writeText(text, Charsets.UTF_8)
             }
         } finally {
             conn.disconnect()
@@ -180,7 +197,8 @@ class MainActivity : Activity() {
     }
 
     companion object {
-        private const val REQ_VERBS = 1
-        private const val REQ_WORDS = 2
+        private const val REQ_PICK = 1
+        private const val VERBS_FILE = "phrasal_verbs.txt"
+        private const val WORDS_FILE = "words.txt"
     }
 }
