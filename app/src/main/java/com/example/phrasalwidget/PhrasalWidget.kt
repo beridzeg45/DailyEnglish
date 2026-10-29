@@ -64,6 +64,6 @@ class PhrasalWidget : AppWidgetProvider() {
     companion object {
         const val ACTION_REFRESH = "com.example.phrasalwidget.REFRESH"
         const val VERBS_URL =
-            "https://raw.githubusercontent.com/beridzeg45/DailyEnglish/main/DailyEnglish/app/src/main/assets/phrasal_verbs.txt"
+                "https://raw.githubusercontent.com/beridzeg45/DailyEnglish/main/app/src/main/assets/phrasal_verbs.txt"
     }
 }
