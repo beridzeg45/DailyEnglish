@@ -48,14 +48,11 @@ class MainActivity : Activity() {
         tabVerbs.setOnClickListener { showList(VERBS_FILE) }
         tabWords.setOnClickListener { showList(WORDS_FILE) }
 
-        // Row 2: load your own file for the list being shown, or Reset = download from GitHub
+        // Row 2: download the latest lists from GitHub
         val actions = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
-        val choose = Button(this).apply { text = "Choose file"; isAllCaps = false }
-        val reset = Button(this).apply { text = "Reset"; isAllCaps = false }
-        actions.addView(choose, bw)
-        actions.addView(reset, bw)
-        choose.setOnClickListener { pickFile() }
-        reset.setOnClickListener { resetToOnline() }
+        val update = Button(this).apply { text = "Update"; isAllCaps = false }
+        actions.addView(update, bw)
+        update.setOnClickListener { updateFromGitHub() }
 
         val search = EditText(this).apply { hint = "Search"; setSingleLine() }
         val list = ListView(this)
@@ -90,7 +87,8 @@ class MainActivity : Activity() {
     }
 
     // Downloads both lists from GitHub, then updates the screen and the widgets
-    private fun refreshOnline() {
+    private fun updateFromGitHub() {
+        Toast.makeText(this, "Downloading...", Toast.LENGTH_SHORT).show()
         Thread {
             val verbsOk = try { download(VERBS_FILE, PhrasalWidget.VERBS_URL) } catch (e: Exception) { false }
             val wordsOk = try { download(WORDS_FILE, WordsWidget.WORDS_URL) } catch (e: Exception) { false }
@@ -99,7 +97,12 @@ class MainActivity : Activity() {
                 all = fresh
                 applyFilter()
                 refreshWidgets()
-                val msg = if (verbsOk && wordsOk) "Updated from GitHub" else "Download failed"
+                val msg = when {
+                    verbsOk && wordsOk -> "Updated from GitHub"
+                    !verbsOk && !wordsOk -> "Both downloads failed"
+                    !verbsOk -> "phrasal_verbs.txt failed"
+                    else -> "words.txt failed"
+                }
                 Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
             }
         }.start()
@@ -131,50 +134,6 @@ class MainActivity : Activity() {
         }
     }
 
-    // Opens the system file picker; the chosen file replaces the list currently shown
-    private fun pickFile() {
-        val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
-            addCategory(Intent.CATEGORY_OPENABLE)
-            type = "*/*"
-        }
-        startActivityForResult(intent, REQ_PICK)
-    }
-
-    @Deprecated("Deprecated in Java")
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode != REQ_PICK || resultCode != RESULT_OK) return
-        val uri = data?.data ?: return
-        try {
-            val text = contentResolver.openInputStream(uri)!!.bufferedReader(Charsets.UTF_8).readText()
-            if (text.isBlank()) {
-                Toast.makeText(this, "File is empty", Toast.LENGTH_SHORT).show()
-                return
-            }
-            File(filesDir, current).writeText(text, Charsets.UTF_8)
-            PhrasalWidget.setCustom(this, current, true)
-            Toast.makeText(this, "$current loaded", Toast.LENGTH_SHORT).show()
-        } catch (e: Exception) {
-            Toast.makeText(this, "Could not read file", Toast.LENGTH_SHORT).show()
-            return
-        }
-        all = readLocal()
-        applyFilter()
-        refreshWidgets()
-    }
-
-    // Reset: forget chosen files and download the latest lists from GitHub
-    private fun resetToOnline() {
-        for (name in listOf(VERBS_FILE, WORDS_FILE)) {
-            PhrasalWidget.setCustom(this, name, false)
-            File(filesDir, name).delete()
-        }
-        Toast.makeText(this, "Downloading...", Toast.LENGTH_SHORT).show()
-        all = readLocal()
-        applyFilter()
-        refreshOnline()
-    }
-
     private fun refreshWidgets() {
         val manager = AppWidgetManager.getInstance(this)
         for (cls in listOf(PhrasalWidget::class.java, WordsWidget::class.java)) {
@@ -187,9 +146,8 @@ class MainActivity : Activity() {
         }
     }
 
-    // Returns true if the file is up to date (downloaded, or you chose your own)
+    // Returns true if the file was downloaded and saved
     private fun download(name: String, url: String): Boolean {
-        if (PhrasalWidget.isCustom(this, name)) return true
         val conn = URL(url).openConnection() as HttpURLConnection
         conn.connectTimeout = 5000
         conn.readTimeout = 5000
@@ -208,7 +166,6 @@ class MainActivity : Activity() {
     }
 
     companion object {
-        private const val REQ_PICK = 1
         private const val VERBS_FILE = "phrasal_verbs.txt"
         private const val WORDS_FILE = "words.txt"
     }
