@@ -168,3 +168,8 @@ poignant; Causing a strong feeling of sadness or sympathy; The film's final scen
 prudent; Careful and sensible, avoiding unnecessary risk; It would be prudent to save some money for emergencies.; He made a prudent decision to wait for more information.; sensible, cautious
 reticent; Unwilling to share thoughts or feelings openly; He was reticent about his past.; The witness was reticent when asked about the incident.; reserved, uncommunicative
 thwart; To prevent someone from achieving something; Police thwarted the robbery just in time.; Bad weather thwarted our plans for a picnic.; foil, block
+ardent; Showing strong feeling or enthusiasm for something; He is an ardent supporter of animal rights.; She wrote ardent letters to her family every week.; passionate, fervent
+obstinate; Stubbornly refusing to change your opinion or behavior; He was obstinate and refused to listen to advice.; The obstinate stain would not come out of the carpet.; stubborn, headstrong
+stoic; Accepting pain or difficulty without complaining; She remained stoic throughout the long illness.; The soldiers faced the hardship with stoic calm.; uncomplaining, composed
+substantiate; To provide evidence that proves something is true; The journalist could not substantiate his claims.; Research is needed to substantiate these results.; prove, verify
+whimsical; Playful and unusual, often in a charming or unpredictable way; The garden was filled with whimsical sculptures.; She has a whimsical sense of humor.; quirky, playful
