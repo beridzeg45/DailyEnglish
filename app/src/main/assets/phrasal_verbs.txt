@@ -1071,3 +1071,8 @@ hash out; The two partners met to hash out the details of the contract.; We need
 peter out; The enthusiasm for the project petered out after a few weeks.; The path petered out in the middle of the forest.; fade away, gradually end
 single out; The teacher singled out two students for special praise.; I felt embarrassed when the boss singled me out in the meeting.; pick out, choose
 scrape by; They barely scraped by on one salary.; She scraped by in the exam with just 51 percent.; manage with difficulty
+pick apart; The critics picked apart every detail of his argument.; She picked apart the report and found several errors.; criticize in detail
+ride out; The company managed to ride out the economic crisis.; We stayed indoors to ride out the storm.; survive, endure
+skim through; I skimmed through the report on the train this morning.; Skim through the chapter before the lecture to get the main ideas.; read quickly
+stumble upon; I stumbled upon an old photo album in the attic.; While searching online, she stumbled upon a great job offer.; find by chance
+work around; We found a way to work around the software problem.; You can work around the budget limits by using free tools.; find a way to avoid a problem
