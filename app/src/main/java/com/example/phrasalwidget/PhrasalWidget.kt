@@ -62,15 +62,6 @@ class PhrasalWidget : AppWidgetProvider() {
     }
 
     companion object {
-        // True when the user picked this file inside the app: Reset/download must not overwrite it
-        fun isCustom(context: Context, fileName: String): Boolean =
-            context.getSharedPreferences("custom_files", Context.MODE_PRIVATE).getBoolean(fileName, false)
-
-        fun setCustom(context: Context, fileName: String, value: Boolean) {
-            context.getSharedPreferences("custom_files", Context.MODE_PRIVATE)
-                .edit().putBoolean(fileName, value).apply()
-        }
-
         const val ACTION_REFRESH = "com.example.phrasalwidget.REFRESH"
         const val VERBS_URL =
             "https://raw.githubusercontent.com/beridzeg45/DailyEnglish/main/DailyEnglish/app/src/main/assets/phrasal_verbs.txt"
