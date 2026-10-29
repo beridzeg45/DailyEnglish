@@ -148,7 +148,8 @@ class MainActivity : Activity() {
 
     // Returns true if the file was downloaded and saved
     private fun download(name: String, url: String): Boolean {
-        val conn = URL(url).openConnection() as HttpURLConnection
+        val conn = URL("$url?t=${System.currentTimeMillis()}").openConnection() as HttpURLConnection
+        conn.useCaches = false
         conn.connectTimeout = 5000
         conn.readTimeout = 5000
         try {
