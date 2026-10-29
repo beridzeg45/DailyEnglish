@@ -178,3 +178,4 @@ taciturn; Saying very little and not enjoying conversation; He was a taciturn ma
 fastidious; Very careful about details, or difficult to please; She is fastidious about keeping her desk tidy.; He is a fastidious eater who avoids most restaurants.; fussy, particular
 wane; To become weaker or less important over time; Public interest in the story began to wane.; The moon wanes after it reaches its fullest point.; decline, fade
 unwavering; Steady and firm, not changing or doubting; She showed unwavering loyalty to her team.; His unwavering belief in the project inspired others.; steadfast, constant
+allude to; During the speech, he alluded to his humble beginnings without giving away too many details.; She mentioned some trouble that she'd had at home, and I guessed she was alluding to her son.; hint at, impply
