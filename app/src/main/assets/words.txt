@@ -148,3 +148,23 @@ susceptible; Easily affected or influenced by something; Young children are susc
 trivial; Of little importance or value; They argued over a trivial matter.; Don't worry about such trivial details.; minor, petty
 ubiquitous; Seeming to be everywhere at the same time; Smartphones are now ubiquitous.; The ubiquitous advertising is hard to avoid.; omnipresent, widespread
 vindicate; To prove that someone was right or not guilty; The new evidence vindicated the accused man.; Her success vindicated her decision to leave her job.; justify, exonerate
+aloof; Distant and not friendly, avoiding closeness with others; She remained aloof from the office gossip.; He seemed aloof at first, but he was just shy.; distant, detached
+astute; Clever and quick to understand a situation, often for practical benefit; An astute investor, she sold her shares before the crash.; His astute observation changed the way we approached the problem.; shrewd, perceptive
+austere; Plain and simple, without comfort or decoration, or very strict; The monks lived an austere life in the mountains.; The room was austere, with only a bed and a table.; plain, severe
+avid; Having a strong and eager interest in something; She is an avid reader of crime novels.; He became an avid supporter of the local team.; keen, enthusiastic
+dwindle; To become smaller or fewer gradually; The village population has dwindled over the years.; Our supplies began to dwindle after the first week.; shrink, diminish
+emulate; To try to be as good as someone you admire, often by copying; Young players try to emulate their heroes.; Many companies want to emulate the success of the market leader.; imitate, follow
+enigmatic; Mysterious and difficult to understand; The painting is famous for its enigmatic smile.; He gave an enigmatic reply and left the room.; mysterious, puzzling
+eradicate; To destroy or remove something completely; The disease was eradicated through a global vaccination program.; The company aims to eradicate waste from its factories.; eliminate, wipe out
+formidable; Causing fear or respect because of great power or difficulty; She is a formidable opponent in debates.; Climbing the mountain in winter is a formidable challenge.; intimidating, powerful
+frugal; Careful about spending money or using resources; They lived a frugal life and saved most of their income.; He is frugal with his time and never wastes a minute.; thrifty, economical
+gregarious; Enjoying being with other people; He is gregarious and makes friends everywhere.; Wolves are gregarious animals that live in packs.; sociable, outgoing
+haphazard; Done without a plan or order; The books were stacked in a haphazard way.; The company's haphazard approach to hiring caused problems.; random, disorganized
+impetus; Something that makes a process start or develop faster; The new law gave fresh impetus to the reform.; Competition provided the impetus for innovation.; stimulus, momentum
+indignant; Angry because of something you think is unfair; She was indignant at being accused of cheating.; He wrote an indignant letter to the editor.; outraged, offended
+inhibit; To prevent or slow down something, or make someone too nervous to act; High prices inhibit economic growth.; Shyness can inhibit children from speaking in class.; hinder, restrain
+lucrative; Producing a lot of money or profit; He left teaching for a more lucrative career in finance.; The company signed a lucrative contract with the government.; profitable, well-paid
+poignant; Causing a strong feeling of sadness or sympathy; The film's final scene was deeply poignant.; She gave a poignant speech about her lost friend.; touching, moving
+prudent; Careful and sensible, avoiding unnecessary risk; It would be prudent to save some money for emergencies.; He made a prudent decision to wait for more information.; sensible, cautious
+reticent; Unwilling to share thoughts or feelings openly; He was reticent about his past.; The witness was reticent when asked about the incident.; reserved, uncommunicative
+thwart; To prevent someone from achieving something; Police thwarted the robbery just in time.; Bad weather thwarted our plans for a picnic.; foil, block
