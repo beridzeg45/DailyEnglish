@@ -98,3 +98,53 @@ zealous; Showing great energy and enthusiasm for a cause or goal; The zealous vo
 tenuous; Weak, slight, or not well supported; The evidence linking the two events was tenuous.; They maintained a tenuous connection after moving abroad.; weak, flimsy
 fortuitous; Happening by chance in a way that proves fortunate; A fortuitous meeting led to a valuable collaboration.; It was fortuitous that we arrived just before the storm.; lucky, fortunate
 incongruous; Strange or unsuitable because it does not fit its surroundings; His cheerful joke seemed incongruous at the solemn ceremony.; The modern sculpture looked incongruous beside the ancient ruins.; out of place, inappropriate
+alleviate; To make pain, difficulty, or a problem less severe; Medication can alleviate the pain, but it won't cure the condition.; The government introduced new measures to alleviate poverty.; ease, relieve
+arduous; Very difficult and tiring, needing great effort; The climb to the summit was arduous.; She completed the arduous task of translating the entire manual.; grueling, demanding
+audacious; Showing a willingness to take bold risks; It was an audacious plan to cross the desert on foot.; The company made an audacious bid to enter the market.; bold, daring
+benevolent; Kind, generous, and wanting to help others; A benevolent donor paid for the school's new library.; He was a benevolent leader who cared about his workers.; kind, charitable
+blatant; Obvious and done openly without shame; The article contained a blatant lie.; It was a blatant attempt to avoid responsibility.; flagrant, glaring
+bleak; Without hope or comfort, or empty and unwelcoming; The economic outlook remains bleak.; We walked across the bleak, windswept moor.; grim, dismal
+bolster; To support or strengthen something; The good results bolstered investors' confidence.; She brought extra evidence to bolster her argument.; strengthen, boost
+capricious; Changing mood or behavior suddenly and without clear reason; The capricious weather ruined our picnic plans.; A capricious manager makes it hard for the team to plan.; unpredictable, fickle
+circumvent; To find a way around a rule or problem, often cleverly; Some companies try to circumvent environmental regulations.; We took a side road to circumvent the traffic jam.; bypass, evade
+clandestine; Kept secret, often because it is not allowed; The two leaders held a clandestine meeting.; They ran a clandestine operation from the basement.; secret, covert
+cogent; Clear, logical, and convincing; She gave a cogent explanation of her decision.; The report makes a cogent case for change.; convincing, persuasive
+conducive; Making a certain result easy or likely; A quiet room is conducive to studying.; The warm climate is conducive to growing fruit.; favorable, helpful
+convoluted; Extremely complicated and difficult to follow; The plot of the film was too convoluted to understand.; He gave a convoluted explanation that confused everyone.; complicated, tangled
+cynical; Believing that people act only from selfish motives; He is cynical about politicians' promises.; Her cynical comment spoiled the mood.; distrustful, pessimistic
+daunting; Making you feel nervous or less confident; Moving to a new country can be a daunting prospect.; She faced the daunting task of rebuilding the team.; intimidating, formidable
+detrimental; Causing harm or damage; Lack of sleep is detrimental to your health.; The changes had a detrimental effect on sales.; harmful, damaging
+discreet; Careful not to attract attention or reveal private information; Please be discreet about the news until it is announced.; He made a few discreet inquiries about the job.; tactful, cautious
+disparity; A noticeable and often unfair difference between things; There is a large disparity between rich and poor areas.; The report highlights a pay disparity between men and women.; gap, inequality
+dubious; Doubtful or not to be trusted; The company has a dubious reputation.; I was dubious about his claim that he'd met the president.; questionable, suspicious
+ephemeral; Lasting for only a very short time; Fame can be ephemeral.; The beauty of the cherry blossoms is ephemeral.; fleeting, short-lived
+exhaustive; Complete and covering every possible detail; The police conducted an exhaustive search of the area.; She wrote an exhaustive report on the project.; thorough, comprehensive
+flourish; To grow or develop well and successfully; Small businesses flourish in a stable economy.; The garden flourished after the spring rains.; thrive, prosper
+frivolous; Not serious, or showing a lack of sensible purpose; He spent his bonus on frivolous things.; The court rejected the frivolous lawsuit.; silly, trivial
+gratuitous; Unnecessary and done without good reason; The film contains gratuitous violence.; Her gratuitous remarks upset the guests.; unnecessary, uncalled-for
+hinder; To make it difficult for something to happen or develop; Bad weather hindered the rescue efforts.; Lack of funding will hinder the research.; obstruct, hamper
+impeccable; Perfect, with no mistakes or faults; She speaks impeccable English.; The hotel offers impeccable service.; flawless, faultless
+impending; About to happen, often something unpleasant; There was a sense of impending disaster.; Residents were warned of the impending storm.; imminent, approaching
+indispensable; So important that you cannot manage without it; A smartphone has become indispensable for many people.; She made herself indispensable to the team.; essential, vital
+insidious; Harmful in a gradual way that is hard to notice; The insidious effects of stress build up slowly.; Online misinformation can be insidious.; treacherous, stealthy
+intrinsic; Belonging naturally to something as an essential part; The job has an intrinsic value beyond the salary.; Curiosity is intrinsic to learning.; inherent, fundamental
+jeopardize; To put something in danger of being harmed or lost; One mistake could jeopardize the whole project.; Smoking jeopardizes your health.; endanger, risk
+lenient; Less strict than expected when punishing or judging; The teacher was lenient about late homework.; The judge was criticized for being too lenient.; merciful, tolerant
+mitigate; To make something less harmful or serious; Trees help mitigate the effects of pollution.; The company took steps to mitigate the risk.; reduce, lessen
+negligible; So small or unimportant that it is not worth considering; The difference in price is negligible.; The damage to the car was negligible.; insignificant, minimal
+notorious; Famous for something bad; The city is notorious for its heavy traffic.; He was a notorious liar.; infamous, disreputable
+ominous; Suggesting that something bad is going to happen; Dark clouds gathered, which was an ominous sign.; There was an ominous silence on the phone.; threatening, sinister
+ostensible; Appearing to be true, but not necessarily real; The ostensible reason for the trip was business.; His ostensible friendliness hid other motives.; apparent, supposed
+pivotal; Extremely important because other things depend on it; She played a pivotal role in the negotiations.; The match was a pivotal moment in his career.; crucial, central
+pretentious; Trying to seem more important or cultured than you are; The restaurant was too pretentious for my taste.; He gave a pretentious speech full of long words.; showy, affected
+reiterate; To say something again to make it clear; The manager reiterated that the deadline would not change.; I want to reiterate how grateful we are.; repeat, restate
+scant; Very little, not enough; There was scant evidence to support his claim.; The new employees received scant training.; meager, limited
+scrupulous; Very careful about doing what is right, or about details; She is scrupulous about keeping accurate records.; A scrupulous judge would not accept the gift.; conscientious, principled
+spontaneous; Done naturally and suddenly without planning; The crowd broke into spontaneous applause.; We made a spontaneous decision to visit Rome.; impulsive, unplanned
+stagnant; Not moving, growing, or developing; The economy has been stagnant for years.; Stagnant water attracts mosquitoes.; static, sluggish
+stringent; Strict and demanding, with firm rules; The country has stringent laws on air pollution.; Applicants must meet stringent requirements.; strict, rigorous
+succinct; Clearly expressed in few words; Please keep your answers succinct.; She gave a succinct summary of the meeting.; concise, brief
+susceptible; Easily affected or influenced by something; Young children are susceptible to infections.; He is susceptible to flattery.; prone, liable
+trivial; Of little importance or value; They argued over a trivial matter.; Don't worry about such trivial details.; minor, petty
+ubiquitous; Seeming to be everywhere at the same time; Smartphones are now ubiquitous.; The ubiquitous advertising is hard to avoid.; omnipresent, widespread
+vindicate; To prove that someone was right or not guilty; The new evidence vindicated the accused man.; Her success vindicated her decision to leave her job.; justify, exonerate
