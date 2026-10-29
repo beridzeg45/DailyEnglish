@@ -173,3 +173,8 @@ obstinate; Stubbornly refusing to change your opinion or behavior; He was obstin
 stoic; Accepting pain or difficulty without complaining; She remained stoic throughout the long illness.; The soldiers faced the hardship with stoic calm.; uncomplaining, composed
 substantiate; To provide evidence that proves something is true; The journalist could not substantiate his claims.; Research is needed to substantiate these results.; prove, verify
 whimsical; Playful and unusual, often in a charming or unpredictable way; The garden was filled with whimsical sculptures.; She has a whimsical sense of humor.; quirky, playful
+tangible; Real and clear enough to be seen, touched, or measured; The new system brought tangible benefits to the team.; There was no tangible evidence of the damage.; concrete, real
+taciturn; Saying very little and not enjoying conversation; He was a taciturn man who rarely spoke at dinner.; Her taciturn manner made her hard to get to know.; quiet, silent
+fastidious; Very careful about details, or difficult to please; She is fastidious about keeping her desk tidy.; He is a fastidious eater who avoids most restaurants.; fussy, particular
+wane; To become weaker or less important over time; Public interest in the story began to wane.; The moon wanes after it reaches its fullest point.; decline, fade
+unwavering; Steady and firm, not changing or doubting; She showed unwavering loyalty to her team.; His unwavering belief in the project inspired others.; steadfast, constant
