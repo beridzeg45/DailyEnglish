@@ -48,7 +48,7 @@ class MainActivity : Activity() {
         tabVerbs.setOnClickListener { showList(VERBS_FILE) }
         tabWords.setOnClickListener { showList(WORDS_FILE) }
 
-        // Row 2: load your own file for the list being shown, or go back to online files
+        // Row 2: load your own file for the list being shown, or Reset = download from GitHub
         val actions = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
         val choose = Button(this).apply { text = "Choose file"; isAllCaps = false }
         val reset = Button(this).apply { text = "Reset"; isAllCaps = false }
@@ -81,7 +81,6 @@ class MainActivity : Activity() {
 
         all = readLocal()
         applyFilter()
-        refreshOnline()
     }
 
     private fun showList(file: String) {
@@ -90,12 +89,19 @@ class MainActivity : Activity() {
         applyFilter()
     }
 
+    // Downloads both lists from GitHub, then updates the screen and the widgets
     private fun refreshOnline() {
         Thread {
-            try { download(VERBS_FILE, PhrasalWidget.VERBS_URL) } catch (e: Exception) { }
-            try { download(WORDS_FILE, WordsWidget.WORDS_URL) } catch (e: Exception) { }
+            val verbsOk = try { download(VERBS_FILE, PhrasalWidget.VERBS_URL) } catch (e: Exception) { false }
+            val wordsOk = try { download(WORDS_FILE, WordsWidget.WORDS_URL) } catch (e: Exception) { false }
             val fresh = readLocal()
-            runOnUiThread { all = fresh; applyFilter() }
+            runOnUiThread {
+                all = fresh
+                applyFilter()
+                refreshWidgets()
+                val msg = if (verbsOk && wordsOk) "Updated from GitHub" else "Download failed"
+                Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+            }
         }.start()
     }
 
@@ -157,16 +163,16 @@ class MainActivity : Activity() {
         refreshWidgets()
     }
 
+    // Reset: forget chosen files and download the latest lists from GitHub
     private fun resetToOnline() {
         for (name in listOf(VERBS_FILE, WORDS_FILE)) {
             PhrasalWidget.setCustom(this, name, false)
             File(filesDir, name).delete()
         }
-        Toast.makeText(this, "Using online files", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Downloading...", Toast.LENGTH_SHORT).show()
         all = readLocal()
         applyFilter()
         refreshOnline()
-        refreshWidgets()
     }
 
     private fun refreshWidgets() {
@@ -181,16 +187,21 @@ class MainActivity : Activity() {
         }
     }
 
-    private fun download(name: String, url: String) {
-        if (PhrasalWidget.isCustom(this, name)) return
+    // Returns true if the file is up to date (downloaded, or you chose your own)
+    private fun download(name: String, url: String): Boolean {
+        if (PhrasalWidget.isCustom(this, name)) return true
         val conn = URL(url).openConnection() as HttpURLConnection
         conn.connectTimeout = 5000
         conn.readTimeout = 5000
         try {
             if (conn.responseCode == 200) {
                 val text = conn.inputStream.bufferedReader(Charsets.UTF_8).readText()
-                if (text.isNotBlank()) File(filesDir, name).writeText(text, Charsets.UTF_8)
+                if (text.isNotBlank()) {
+                    File(filesDir, name).writeText(text, Charsets.UTF_8)
+                    return true
+                }
             }
+            return false
         } finally {
             conn.disconnect()
         }
