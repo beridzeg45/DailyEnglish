@@ -8,18 +8,11 @@ import android.content.Context
 import android.content.Intent
 import android.widget.RemoteViews
 import java.io.File
-import java.net.HttpURLConnection
-import java.net.URL
 
 class WordsWidget : AppWidgetProvider() {
 
     override fun onUpdate(context: Context, manager: AppWidgetManager, ids: IntArray) {
-        val pending = goAsync()
-        Thread {
-            try { refreshCache(context) } catch (e: Exception) { }
-            for (id in ids) manager.updateAppWidget(id, buildViews(context))
-            pending.finish()
-        }.start()
+        for (id in ids) manager.updateAppWidget(id, buildViews(context))
     }
 
     override fun onReceive(context: Context, intent: Intent) {
@@ -28,23 +21,6 @@ class WordsWidget : AppWidgetProvider() {
             val manager = AppWidgetManager.getInstance(context)
             val ids = manager.getAppWidgetIds(ComponentName(context, WordsWidget::class.java))
             onUpdate(context, manager, ids)
-        }
-    }
-
-    private fun refreshCache(context: Context) {
-        if (PhrasalWidget.isCustom(context, "words.txt")) return
-        val cache = File(context.filesDir, "words.txt")
-        if (cache.exists() && System.currentTimeMillis() - cache.lastModified() < 5 * 60 * 1000) return
-        val conn = URL(WORDS_URL).openConnection() as HttpURLConnection
-        conn.connectTimeout = 5000
-        conn.readTimeout = 5000
-        try {
-            if (conn.responseCode == 200) {
-                val text = conn.inputStream.bufferedReader(Charsets.UTF_8).readText()
-                if (text.isNotBlank()) cache.writeText(text, Charsets.UTF_8)
-            }
-        } finally {
-            conn.disconnect()
         }
     }
 
