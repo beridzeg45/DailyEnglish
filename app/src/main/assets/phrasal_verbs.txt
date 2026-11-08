@@ -241,7 +241,7 @@ do up; We’ve decided to do up our apartment. We’ll paint it, redecorate it a
 do with; What did you do with the magazines I put here yesterday? You haven’t thrown them out, have you?; What will you do with all that free time after you’ve retired?; 
 do without; We’ll have to do without the air-conditioning while they fix it. It’s going to be really hot!; She can’t do without her coffee in the morning. It gets her going.; go without
 doze off; Jose dozed off during our boss’s speech and started to snore. It was really funny!; I didn’t sleep very well last night, so I dozed off at my desk today.; nod off
-drag on; His speech seemed to drag on for hours. He nearly put everyone to sleep!; The meeting was very slow and boring. It dragged on for ages.; go on
+drag on (for period); His speech seemed to drag on for hours. He nearly put everyone to sleep!; The meeting was very slow and boring. It dragged on for ages.; go on
 draw on / upon; We always like to employ a few older people who have lots of experience to draw on when doing their work.; She never gets tired. She must have a huge supply of energy to draw upon.; 
 draw up; We need our lawyer to draw up a new contract for employees before we hire any new staff.; After drawing up the new guidelines, he passed them on to the manager.; write up
 dream of; When he was young, he dreamed of being a famous football player.; Bob dreamed of becoming a rich and successful businessman.; 
@@ -250,7 +250,7 @@ drive out; During the war, people were driven out of their homes by invading sol
 drop by (informal); Why don’t you drop by on your way home from work and help me cook some food?; How about dropping by on Saturday afternoon and we’ll watch the golf?; come around, over, stop by
 drop in; I’ll pop by the library on my way home and drop the books in.; Could you drop the sales report in to my office when it’s done?; drop off
 drop off; Every morning I drop the kids off at school on my way to work.; Make sure someone drops off these samples at the customer’s office today.; 
-drop out; Not many students drop out of university these days, but in the 1960s many quit studying so they’d be free to do whatever they wanted to.; Tell the staff that I don’t want anyone dropping out of the English classes.; opt out
+drop out of; Not many students drop out of university these days, but in the 1960s many quit studying so they’d be free to do whatever they wanted to.; Tell the staff that I don’t want anyone dropping out of the English classes.; opt out
 dry up; The farm’s dams dried up during the drought, but they filled up again after some storms.; If the world’s oil reserves dried up, the economy would collapse.; 
 dumb down (informal); Some movie directors say big studios want them to dumb their movies down so more people can understand them.; Do you think it’s true that media companies dumb down their products?; 
 eat in; I don’t feel like going out to a restaurant. Let’s stay home and eat in tonight.; If you eat in a lot, make sure you don’t just heat up frozen meals.; 
@@ -263,7 +263,7 @@ end up; If you hadn’t studied hard and got good qualifications, you might have
 end with; After a great concert and lots of dancing, the New Year’s Eve celebrations ended with a fantastic display of fireworks.; She ended her talk with a summary of the main points she’d made.; culminate in
 engage in (formal); The power company is engaged in a dispute with local people over the construction of a dam that would destroy many villages.; Most of our students are engaged in social and sporting activities.; involve in
 enter into; The government has entered into an agreement to help companies cover the cost of reducing pollution by lowering their taxes.; We are entering into discussions with several potential investors.; 
-entitle to; Every Australian citizen is entitled to an old-age pension once they reach the age of sixty-five.; Membership entitles you and a guest to the use all of the club’s facilities.; 
+entitle to (do sth); Every Australian citizen is entitled to an old-age pension once they reach the age of sixty-five.; Membership entitles you and a guest to the use all of the club’s facilities.; 
 even up; You paid for dinner last time, so if I pay this time that’ll even things up.; Our players have evened up the score. If we score again we’ll be ahead.; 
 expose to; Many soldiers were exposed to dangerous chemicals during the war and some are now getting sick as a result.; It’s a good idea to expose young staff to various work environments.; 
 face up to; It’s time I faced up to the fact that I’m getting older and I have to start taking better care of my body.; We have to face up to the challenge of competing with cheap imports.; 
@@ -280,22 +280,22 @@ fall over; My little boy was running along when he tripped and fell over and hur
 fall through; Our plans for a trip to China fell through when my wife got sick and we had to stay home.; The company’s plans to expand fell through due to lack of finance.; 
 feel for; She stays out late and comes home drunk. Her neighbours feel for her children, but they don’t know what they can do for them.; People who feel for poor kids can join a scheme to sponsor a child overseas.; 
 fend off; A gang of young men attacked Rajiv in the street. He tried to fend them off, but there were too many of them and he was badly beaten.; It’s not easy to fend a big dog off if it’s trying to attack you and bite you.; fight off, ward
-fight back; Johnny just stands there when other kids tease him. He won’t defend himself or fight back in any way.; Local shoe manufacturers will have to fight back against cheap imports.; hit back
+fight back (against sth/sb; Johnny just stands there when other kids tease him. He won’t defend himself or fight back in any way.; Local shoe manufacturers will have to fight back against cheap imports.; hit back
 fight off; You have to fight off those negative thoughts or you’ll start believing them and thinking you can’t succeed. And you can!; Local producers are fighting off competition from foreign companies.; fend off, ward up to
-figure on; He hadn’t figured on economic problems causing his business to fail, so now that they have he doesn’t know what to do.; How do they figure on competing with cheap, imported products?; 
+figure on (doing sth); He hadn’t figured on economic problems causing his business to fail, so now that they have he doesn’t know what to do.; How do they figure on competing with cheap, imported products?; 
 figure out; Read the two example sentences and try to figure out what the phrasal verb means.; We need to figure out a way to increase our market share.; work out
 figure out; Even though I’ve known her for a couple of years, I still haven’t figured Kathy out. I never know what she’s really thinking.; Good managers can figure people out and deal with them effectively.; work out
-fill in; In the next exercise, you’ll have to fill in the blanks with the correct form of the verb.; Each new employee has to fill this form in with their personal details.; 
-fill in; Could you fill me in on the details before the meeting starts? I haven’t had time to read the report.; I’ll fill everyone in on the results of the survey at tomorrow’s meeting.; 
+fill in (with sth); In the next exercise, you’ll have to fill in the blanks with the correct form of the verb.; Each new employee has to fill this form in with their personal details.; 
+fill in (for sb); Could you fill me in on the details before the meeting starts? I haven’t had time to read the report.; I’ll fill everyone in on the results of the survey at tomorrow’s meeting.; 
 fill in; We had a substitute teacher today. She’ll be filling in for Mr. Shan until he gets better.; Bill can’t chair today’s meeting, so Sue’s filling in for him.; sit in for, stand
 fill out; Before the job interview begins you’ll have to fill out your application form, so make sure you take a pen.; Could you fill these order forms out before the end of the day, please?; fill in
 fill up; If you pour a glass of beer for someone, make sure you fill it up to the top.; Don’t forget to fill up the car with petrol before you leave. It’s a very long trip.; 
 find out; Sue’s having trouble sleeping because she’s worried that her boss will find out about her mistake and sack her.; Could you find out how long it takes to send a shipment to Japan?; 
 finish off; There’s just one piece of apple pie left. Who’d like to finish it off?; The report isn’t ready yet, but I should be able to finish it off tomorrow.; polish off (inf, mostly for food)
-finish up; After working her way around South America, Sue finished up in Mexico City working as an English teacher.; We finished up working half the night in order to get the job done on time.; end up, wind up
+finish up (doing sth); After working her way around South America, Sue finished up in Mexico City working as an English teacher.; We finished up working half the night in order to get the job done on time.; end up, wind up
 finish with; Have you nearly finished with the printer, or do you have more to do?; Put the projector back in the storeroom when you’ve finished with it.; 
 fire up; The coach fired up his players with his half-time talk, and they came out and played much better in the second half.; Our sales manager is good at motivating sales staff. She really fires them up.; 
-fit in; My son’s having problems fitting in with other kids at his new school. He says they aren’t very friendly towards him.; We need new staff who can easily fit in with our marketing team.; get on, get along
+fit in (with sth/sb); My son’s having problems fitting in with other kids at his new school. He says they aren’t very friendly towards him.; We need new staff who can easily fit in with our marketing team.; get on, get along
 fit together; To complete a jigsaw puzzle, you have to fit all the pieces together to form a picture.; If the parts are made properly, they’ll fit together perfectly.; piece together,
 fix up; We bought an old house and fixed it up. We painted it and redecorated it and now it looks lovely.; Wouldn’t fixing up our old factory be cheaper than building a new one?; do up
 fizzle out; The band was really popular for a few months, but interest in them fizzled out when their good-looking singer left to form another band.; There used to be a lot of interest in the company, but it’s fizzled out now.; die out
@@ -303,29 +303,30 @@ flare up; It’s dangerous in parts of this city. Violence among drug gangs can 
 flick through; I don’t like it when bookshops seal their books. I like to flick through the pages and have a good look before deciding to buy one.; I was flicking through our annual report when I came across this mistake.; go through, look
 flood in; Thousands of cheap products have been flooding in from China and they’re being sold in our department stores for huge profits.; Orders for the new best- selling book have been flooding in all week.; pour in
 focus on; The new government will focus on developing the country’s industrial sector in order to create more jobs and boost the economy.; Our company has always focused on producing high-end products.; concentrate on
-follow up; If you meet a potential client, make sure you get their business card and then follow up the initial contact with a phone call the next day.; We’ll follow this report up with occasional updates on developments.; 
+follow up; If you meet a potential client, make sure you get their business card and then follow up the initial contact with a phone call the next day.; We’ll follow this report up with occasional updates on developments.;
+follow up (with sb on sth); Make sure you follow up with the hiring manager on your application status by tomorrow morning; We will follow up with the project stakeholders on the recent changes to the budget timeline;
 fool around; Everyone in the office was telling jokes and laughing when the boss came in and told us to stop fooling around and start doing some work.; This is a serious business and we don’t have time to fool around.; clown around,, play around
 free up; We have to stop making some of our models for a while to free up machines in order to fill a huge order for one particular model.; We need to free up staff from other departments to help us out.; 
 freshen up; It was hot outside and I felt sweaty when I came back in, so I went straight to the bathroom to freshen up.; I chew on mints to freshen up my breath after I have a cigarette. Do they work?; 
 function as; David is very important to his football club. As well as being their captain and best player, he functions as their media spokesman.; My apartment functions as an office and store- room as well as my home.; act as
 gear to / towards; The courses in our school are geared to preparing students for the demands of work in the real world.; The show is geared towards discovering talented singers.; 
-get about; You don’t need a car to get about in Zurich. With all the excellent buses and trains, getting about on public transport is easy.; Our messengers could save time by getting about on motorbikes.; get around
-get across; Even though he’s studied English for many years, he still has trouble getting his ideas across in a conversation.; An advertising campaign has to get the message across clearly and simply.; put across
+get about (on sth); You don’t need a car to get about in Zurich. With all the excellent buses and trains, getting about on public transport is easy.; Our messengers could save time by getting about on motorbikes.; get around
+get across (to sb); Even though he’s studied English for many years, he still has trouble getting his ideas across in a conversation.; An advertising campaign has to get the message across clearly and simply.; put across
 get ahead; His new business is doing very well and, after years of struggling to make a good income, he’s starting to get ahead financially.; The best way to get ahead in this company is to do excellent work.; 
 get ahead of; He ran fast to get ahead of his competitors, and now he’s leading the race.; Good market research helped their company get ahead of the others.; 
-get along; My sister and I used to argue a lot, but now we get along well.; We want friendly staff who know how to get along with each other.; get on (with)
+get along (with sb); My sister and I used to argue a lot, but now we get along well.; We want friendly staff who know how to get along with each other.; get on (with)
 get around (Brit/Aust); There’s no way of getting around the new tax, so we’ll just have to pay it.; We have to get around the government’s new regulations somehow.; 
-get around; The best way to get around is by subway. It’s fast and you don’t waste time looking for somewhere to park your car.; Getting around by car takes ages but motorbikes are much too dangerous.; get about
+get around (by sth); The best way to get around is by subway. It’s fast and you don’t waste time looking for somewhere to park your car.; Getting around by car takes ages but motorbikes are much too dangerous.; get about
 get around to (Brit/Aust); I haven’t done the work in the garden yet because I’ve been so busy, but I’ll get around to it soon.; When are you going to get around to writing that report? It’s already late.; 
 get at; Make sure you keep the sugar in a sealed container so the ants can’t get at it.; We need the best security software so hackers can’t get at our data.; 
 get at; I didn’t understand the last part of her lecture. Do you know what she was getting at?; I know what he’s getting at, but he could be expressing himself better.; 
-get away; We caught a young guy stealing from our shop. He struggled and got away before the police arrived, but they’re looking for him now.; If possible, I’ll get away from the office early and we can meet somewhere.; 
+get away (from sth); We caught a young guy stealing from our shop. He struggled and got away before the police arrived, but they’re looking for him now.; If possible, I’ll get away from the office early and we can meet somewhere.; 
 get away with; He said he got away with stealing from shops many times when he was young. He never got caught, and had the sense to stop before he was.; The students didn’t get away with cheating in the exam. They were caught.; 
-get back; Can I borrow your book after you get it back from John?; If we don’t get our market share back soon, we’ll be in trouble.; 
+get back (sth from sb); Can I borrow your book after you get it back from John?; If we don’t get our market share back soon, we’ll be in trouble.; 
 get back at; I’ll never forget the way he insulted me in public. One day I’ll get back at him by making him look stupid in front of lots of people.; After we sacked him, he tried to get back at us by saying we avoided tax.; pay back
 get back to; We’ve talked enough about this issue, so let’s get back to the main topic of the meeting.; I think the company needs to get back to doing what it does best.; come back to, to
 get back to; If you don’t have the information you’re asked for, tell the customer you’ll find out and get back to them as soon as possible.; Our policy is to get back to customers who email us within 24 hours.; 
-get by; Sally gets by on her salary, but only just. She can’t afford to buy a new car or travel overseas.; The marketing team can’t get by on their current budget. It isn’t enough.; 
+get by (on sth); Sally gets by on her salary, but only just. She can’t afford to buy a new car or travel overseas.; The marketing team can’t get by on their current budget. It isn’t enough.; 
 get by with / without; Her son wants a car, but he’ll have to get by without one until he starts working. She said he could get by with public transport for now.; He doesn’t need a really expensive computer. He gets by with a cheap one.; 
 get down; I can’t talk to Rafael when he’s depressed. He complains about everything and that gets me down, and I end up feeling unhappy as well.; All the bad news in the media gets my father down sometimes.; 
 get down to; If our company is going to succeed, we have to stop wasting time in meetings and get down to business and start making some money.; I sometimes find it hard to get down to work again after a big lunch.; get on with
@@ -337,20 +338,20 @@ get off; We can’t get off the plane until they open the doors, so there’s no
 get off; Get off the car, son. You’ll leave footprints on the roof.; After getting your award, you can get off the stage by walking to your left.; 
 get off; Get the car off the lawn, son. It’ll leave tyre marks on the grass.; As soon as the band finishes, get their instruments off the stage.; 
 get off; Most Americans only get two weeks off each year. In many other developed countries, people get at least four weeks off for vacations.; How many days do you get off during the New Year holiday period?; take off
-get on; How’re you getting on with the other people in the office? Have you had any problems with anyone?; Mary’s a very sweet person and she’s very easy to get on with.; get along
+get on (with sb); How’re you getting on with the other people in the office? Have you had any problems with anyone?; Mary’s a very sweet person and she’s very easy to get on with.; get along
 get on; James helped an old lady get on the bus today. He’s a real gentleman.; Who would you like to see getting on the Board of Directors?; get onto
 get on; It’s really cold outside. Have you got your thick socks and your extra- warm underwear on?; How long will it take for the dancers to get their new costumes on?; put on
 get onto; Her father was very pleased when she got onto the Board of Directors.; What do I need to do to get my friend onto the planning committee?; get on
 get onto; I think we’ve probably covered that topic. Does anyone want to add anything before we get onto the next item on the agenda?; How did we get onto sport? Shouldn’t we be discussing work issues?; move on (to)
 get on with; Their boss came into the office and said, ‘Get on with your work! I don’t pay you to sit around chatting on your phones all day!’; Let’s get on with the job of looking for some new customers.; get down to
-get out; She tried to get out of the burning car but she couldn’t open the door. It was stuck, so she yelled out, `Help! I can’t get out!’; They couldn’t get out of the building because of the bars on the windows.; 
-get out of; My daughter hates going to the dentist. She always tries to get out of it by saying she feels sick.; Maria will do anything to get out of speaking in public. She hates it.; 
+get out (of sth); She tried to get out of the burning car but she couldn’t open the door. It was stuck, so she yelled out, `Help! I can’t get out!’; They couldn’t get out of the building because of the bars on the windows.; 
+get out of (sth/doing sth); My daughter hates going to the dentist. She always tries to get out of it by saying she feels sick.; Maria will do anything to get out of speaking in public. She hates it.; 
 get over; Benito’s still feeling the pain of breaking up with his girlfriend. It’s taking him a long time to get over it.; How long does your doctor say it’ll take you to get over the operation?; shake off
 get over; Paul still can’t get over the fact that he came top of his class in the English exam. He really was surprised.; It took her a while to get over the shock of winning the lottery.; 
 get through; It’ll take hours to get through all these emails. There must be hundreds of them!; If we work as a team, we can get through the reports much faster.; 
-get through; He’s been calling Jill all morning, but he can’t get through to her. Maybe she’s turned off her phone.; If you can’t get through to my cell phone, try calling the office.; 
+get through (to sth/sb); He’s been calling Jill all morning, but he can’t get through to her. Maybe she’s turned off her phone.; If you can’t get through to my cell phone, try calling the office.; 
 get through to; My daughter still wants to go rock climbing. I can’t seem to get through to her how dangerous it is.; How can we get the idea that we need top quality work through to our staff?; get across (to)
-get together; When we were kids, our whole neighbourhood got together at Auntie Joy’s house on Christmas morning for our Christmas ‘block party’.; We all get together on Saturday nights for dinner and a night on the town.; meet up
+get together (with sb on sth); When we were kids, our whole neighbourhood got together at Auntie Joy’s house on Christmas morning for our Christmas ‘block party’.; We all get together on Saturday nights for dinner and a night on the town.; meet up
 get up; Hondo was late. He usually gets up at 6 o’clock, and today his alarm woke him up, but he went straight back to sleep.; Even when I have a day off, I get up early. I can’t help waking up at 6 a.m.; 
 get up; The students got up when their teacher came into the classroom, and they didn’t sit down until she had sat down.; In many cultures it’s polite to get up when someone enters a room.; stand up
 get up to (informal); We got up to all sorts of mischief when we were kids, like stealing golf balls from golfers and then selling them to the golf shop.; The accountant got up to his usual tricks to cheat the company.; 
@@ -374,7 +375,7 @@ go back; The evening rush hour starts soon and the traffic will be bad, so we sh
 go back on; You can’t trust him. He promises to do something, but he often goes back on his word and doesn’t do it.; Be careful what you say you’ll do, as you can’t go back on a promise.; back out of
 go by; That’s the third bus that’s gone by without stopping. Why don’t the drivers want to pick up passengers?; As the years went by, the company grew bigger and stronger.; pass by
 go down; The cost of airline tickets is going down because of the competition from budget airlines.; A company will fail if it allows the quality of its products to go down.; fall off
-go down; The prime minister said that women should be paid as much as men. His comments went down very well with women, of course.; The new designs went down badly with their customers and sales fell.; go over
+go down (well/badly with sb); The prime minister said that women should be paid as much as men. His comments went down very well with women, of course.; The new designs went down badly with their customers and sales fell.; go over
 go for (informal); Our team is in the final and we’re going for our first championship trophy in twenty years.; Our company is going for the biggest contract it’s ever tried to get.; 
 go for (informal); If she’s on her first date with a guy, Kathy goes for the most expensive thing on the menu and then watches to see how the guy reacts.; We usually go for the job applicant with the most experience.; opt for, pick out
 go for; The apartment next door went for about $500,000 a year ago, so how much do you think this one will go for?; We need to know how much the land would go for if we sold it.; 
